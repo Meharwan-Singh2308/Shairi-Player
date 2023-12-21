@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+*::selection{
+  color: rgb(120, 201, 174);
+}
+
+main{
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  width: 50vw;
+  /* height: 53vh; */
+  background-color: rgb(209, 207, 207);
+  color: black;
+  border-radius: 20px;
+  padding: 1vw;
+}
+
+.card-header h1{
+  font-weight: 700;
+  font-size: 4vw;
+  color: rgb(255, 76, 76);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shairi{
+  /* width: 90%;
+  height: 90%; */
+  padding: 2vw;
+  overflow: hidden;
+}
+.shairi .shair{
+  text-align: center;
+  font-size: 1.7vw;
+  font-weight: 600;
+  transition: all ease-in-out 1s;
+  /* animation: animationForShair 1s ease-in .2s 1; */
+  margin: 5px 0;
+  overflow: hidden;
+}
+
+@keyframes animationForShair {
+  0%{
+    transform: translateY(-100px);
+  }
+  100%{
+    transform: translatey(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: .5;
+    }
+    to {
+      opacity: 1;
+  }
+}
+
+.shair {
+  animation: fadeIn .8s linear;
+}
+
+
+.author{
+  color: darkcyan;
+  font-size: 2.2vw;
+  text-align: right;
+  padding: 0 50px;
+}
+
+@media (max-width:1400px) {
+  
+}
+@media (max-width:1000px) {
+  
+}
+@media (max-width:600px) {
+  
+}
+@media (max-width:400px) {
+ .shair{
+  font-size: 16px;
+ }
+}
