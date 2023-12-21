@@ -98,7 +98,9 @@ function shairiPlayer() {
     shairi.appendChild(shair);
   });
 
-  currentIndex = (currentIndex + 1) % Quotes.length;
+  // currentIndex = (currentIndex + 1) % Quotes.length;
+  currentIndex = Math.floor(Math.random() * Quotes.length);
 }
 
 setInterval(shairiPlayer, 17000);
+setTimeout(shairiPlayer,7000)
